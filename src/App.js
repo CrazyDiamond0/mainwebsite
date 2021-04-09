@@ -11,9 +11,9 @@ function App(){
     return(
         <div>
         <ParticleBackground ></ParticleBackground>
-        <NavigationBar></NavigationBar>
+        
         <Body></Body>
-
+        <NavigationBar></NavigationBar>
         <Footer></Footer>
         </div>
         )
