@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import ParticleBackground from './components/ParticleBackground'
 import Footer from './components/Footer'
 import './index.css'
+import Body from './components/Body'
 
 function App(){
 
@@ -11,10 +12,8 @@ function App(){
         <div>
         <ParticleBackground ></ParticleBackground>
         <NavigationBar></NavigationBar>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
+        <Body></Body>
+
         <Footer></Footer>
         </div>
         )
