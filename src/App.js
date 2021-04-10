@@ -5,6 +5,7 @@ import ParticleBackground from './components/ParticleBackground'
 import Footer from './components/Footer'
 import './index.css'
 import Body from './components/Body'
+import FacebookMessager from './components/FaceBookMessager'
 
 function App(){
 
@@ -14,6 +15,7 @@ function App(){
         
         <Body></Body>
         <NavigationBar></NavigationBar>
+        <FacebookMessager></FacebookMessager>
         <Footer></Footer>
         </div>
         )
