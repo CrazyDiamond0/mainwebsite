@@ -6,6 +6,8 @@ import Footer from './components/Footer'
 import './index.css'
 import Body from './components/Body'
 import FacebookMessager from './components/FaceBookMessager'
+import Projects from './components/Projects'
+
 
 function App(){
 
@@ -15,6 +17,7 @@ function App(){
         <Body></Body>
         <NavigationBar></NavigationBar>
         <FacebookMessager></FacebookMessager>
+        <Projects></Projects>
         <Footer></Footer>
         </div>
         )
