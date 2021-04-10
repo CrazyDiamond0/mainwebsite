@@ -12,7 +12,6 @@ function App(){
     return(
         <div>
         <ParticleBackground ></ParticleBackground>
-        
         <Body></Body>
         <NavigationBar></NavigationBar>
         <FacebookMessager></FacebookMessager>
