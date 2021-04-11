@@ -12,7 +12,7 @@ function NavigationBar(){
 
     <motion.div
     animate={{scale:[0,1.2,1]}}
-    ><a className="navbar-brand" href="https://www.instagram.com/alex.al.pop/"><img className='logo' src={logo} alt='...logo'/></a></motion.div>
+    ><a className="navbar-brand" href="#top"><img className='logo' src={logo} alt='...logo'/></a></motion.div>
     <button className="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>

@@ -16,7 +16,7 @@ export default function Footer(){
                 {/* Section: Social media */}
                 <section className="mb-4">
             
-                <a className="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/alex.al.pop/" target="_blank" rel='noreferrer' role="button"><FontAwesomeIcon icon={faInstagram}/></a>
+        
         
                 <a className="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/alex-popovici/" target="_blank" rel='noreferrer' role="button"><FontAwesomeIcon icon={faLinkedinIn}/></a>
             
