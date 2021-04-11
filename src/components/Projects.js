@@ -14,7 +14,7 @@ const card=
 
 export default function Projects(){
    return( 
-    <Container id="projects" className="project-container" fluid>
+    <Container id="projects" className="project-container" fluid data-toggle="collapse" data-target=".navbar-collapse.show">
       <h2 style={{color:"white",position:'relative',top:'40px'}}>Projects</h2>
     <Row>
     

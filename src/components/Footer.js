@@ -8,7 +8,7 @@ export default function Footer(){
 
     return (
             
-            <footer className="footer bg-dark text-center text-white">
+            <footer className="footer bg-dark text-center text-white" data-toggle="collapse" data-target=".navbar-collapse.show">
                
             {/* Grid container */}
             <div className="container p-4 pb-0">

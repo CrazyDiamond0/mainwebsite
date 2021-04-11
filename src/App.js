@@ -19,7 +19,7 @@ function App(){
         <Body id="home"></Body>
         <NavigationBar ></NavigationBar>
         <FacebookMessager></FacebookMessager>
-        <About id="about"></About>
+        <About ></About>
         <Projects id="projects"></Projects>
         <Contract id="contact"></Contract>
         <Footer></Footer>

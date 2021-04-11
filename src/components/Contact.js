@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function Contact(){
     return(
-        <div className="contact-form">
+        <div className="contact-form" data-toggle="collapse" data-target=".navbar-collapse.show">
             <div id="contact" className=" container ">
             <form method="post">
                 <h3>Drop Us a Message</h3>
