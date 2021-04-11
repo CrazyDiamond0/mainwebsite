@@ -14,8 +14,8 @@ const card=
 
 export default function Projects(){
    return( 
-    <Container className="project-container">
-      <h2 style={{color:"white"}}>Projects</h2>
+    <Container id="projects" className="project-container">
+      <h2 style={{color:"white",position:'relative',top:'40px'}}>Projects</h2>
     <Row>
     
     

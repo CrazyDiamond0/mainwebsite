@@ -7,6 +7,8 @@ import './index.css'
 import Body from './components/Body'
 import FacebookMessager from './components/FaceBookMessager'
 import Projects from './components/Projects'
+import About from './components/About'
+import Contract from './components/Contact'
 
 
 function App(){
@@ -14,10 +16,12 @@ function App(){
     return(
         <div>
         <ParticleBackground ></ParticleBackground>
-        <Body></Body>
-        <NavigationBar></NavigationBar>
+        <Body id="home"></Body>
+        <NavigationBar ></NavigationBar>
         <FacebookMessager></FacebookMessager>
-        <Projects></Projects>
+        <About id="about"></About>
+        <Projects id="projects"></Projects>
+        <Contract id="contact"></Contract>
         <Footer></Footer>
         </div>
         )
