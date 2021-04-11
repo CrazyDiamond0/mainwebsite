@@ -24,6 +24,7 @@
     border-radius: 0.2rem;
     
 }
+
 .nav-item:hover{
     background-color: rgba(0, 0, 0, 0.2);
     transition: 0.5s;
@@ -91,18 +92,26 @@ html{
 
 
 .navbar-toggler{
-    background-color: whitesmoke !important;
-    border-radius: 10rem;
+    
+    background-color:transparent;
+    border:none !important;
+    border-radius: 30rem !important;
     width: 3.5rem;
     height: 3.5rem;
-    opacity: 0.8;
+    opacity: 1;
     text-align: center;
-    
+    transition: 0.2s;
+}
+.navbar-toggler-icon{
+    color:whitesmoke !important;
 }
 
 
 .navbar-toggler:active{
     opacity: 1;
+    background-color: gray !important;
+    transition: 0.2s;
+
 }
 .navbar{
     background-color: #343a40 !important;
