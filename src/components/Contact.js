@@ -1,10 +1,10 @@
 import React from 'react'
-
+import {Container} from 'react-bootstrap'
 
 export default function Contact(){
     return(
-
-            <div id="contact" className="container contact-form">
+        <div className="contact-form">
+            <div id="contact" className=" container ">
             <form method="post">
                 <h3>Drop Us a Message</h3>
                 <div className="row">
@@ -22,7 +22,7 @@ export default function Contact(){
                     <input type="submit" name="btnSubmit" className="btnContact" defaultValue="Send Message" />
                     </div>
                 </div>
-                <div className="col-md-6">
+                <div className="col-md-6  textareacontact">
                     <div className="form-group">
                     <textarea name="txtMsg" className="form-control" placeholder="Your Message *" style={{width: '100%', height: '150px'}} defaultValue={""} />
                     </div>
@@ -30,7 +30,7 @@ export default function Contact(){
                 </div>
             </form>
             </div>
-
+        </div>
     )
 
 

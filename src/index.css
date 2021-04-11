@@ -32,15 +32,14 @@
 }
 .aboutwindow{
     position: relative !important;
-    background-color: white;
-    height: 40rem;
-    top: 70rem;
-    border-radius: 1rem;
+    background-color: whitesmoke;
+    height: 60rem;
+    
 }
 .contact-form{
     position:relative;
-    top:110rem;
-    background-color: #343a40;
+    background-color: gray;
+    height: 20rem;
 }
 html{
     scroll-behavior: smooth;
@@ -50,10 +49,8 @@ html{
 .project-container{
     text-align:center;
     position: relative !important;
-    top: 90rem !important;
     background-color: #343a40;
-    height: 30rem;
-    border-radius: 1rem;
+    height: 60rem;
 }
 
 
@@ -64,18 +61,16 @@ html{
 
 }
 
+
 .particlesbackground{
     
-    position : fixed;
+    position : relative;
     width:100%;
     height:100%;
     z-index: -1;
     background-color: gray;
 }
 
-.navbar-toggler-icon {
-   
-}
 
 .navbar-toggler{
     background-color: white !important;
@@ -91,7 +86,6 @@ html{
 
 .footer{
     position: relative;
-    top:120rem;
 }
 
 .title{

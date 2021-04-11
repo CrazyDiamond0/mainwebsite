@@ -6,7 +6,7 @@ import { motion } from "framer-motion"
 
 
 const card=
-<motion.div initial={{ opacity:0.5 }} whileHover={{ opacity:1,scale:1.1 }}>
+<motion.div initial={{ opacity:0.5 }} whileHover={{ opacity:1,scale:1.05 }}>
 <div className="border-image-projects">
 <Card.Img variant="top" src={img} />
 </div>
@@ -14,7 +14,7 @@ const card=
 
 export default function Projects(){
    return( 
-    <Container id="projects" className="project-container">
+    <Container id="projects" className="project-container" fluid>
       <h2 style={{color:"white",position:'relative',top:'40px'}}>Projects</h2>
     <Row>
     
