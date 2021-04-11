@@ -6,7 +6,7 @@ export default function About(){
     return(
         <div className="aboutpage" data-toggle="collapse" data-target=".navbar-collapse.show">
         <Container id="about" className="aboutwindow" >
-            <a className="navbar-brand"><img className='about-image' src={logo} alt='...logo'/></a>
+            <img className='about-image' src={logo} alt='...logo'/>
         </Container>
         </div>
 
