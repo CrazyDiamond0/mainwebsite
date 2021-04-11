@@ -1,20 +1,35 @@
 import React from 'react'
-import Card from 'bootstrap'
-
-function Projects(){
-    <Card style={{ width: '18rem' }}>
-  <Card.Body>
-    <Card.Title>Card Title</Card.Title>
-    <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
-    <Card.Text>
-      Some quick example text to build on the card title and make up the bulk of
-      the card's content.
-    </Card.Text>
-    <Card.Link href="#">Card Link</Card.Link>
-    <Card.Link href="#">Another Link</Card.Link>
-  </Card.Body>
-</Card>
+import {Card,Row,Col,Container } from 'react-bootstrap'
+import {Button} from 'react-bootstrap'
+import '../index.css'
+import img from '../resources/mainpicture.jpg'
+import { motion } from "framer-motion"
 
 
+const card=
+<motion.div initial={{ opacity:0.5 }} whileHover={{ opacity:1,scale:1.1 }}>
+<div className="border-image-projects">
+<Card.Img variant="top" src={img} />
+</div>
+</motion.div>
 
+export default function Projects(){
+   return( 
+    <Container className="project-container">
+      <h2 style={{color:"white"}}>Projects</h2>
+    <Row>
+    
+    
+    <Col>{card}</Col>
+    <Col>{card}</Col>
+    <Col>{card}</Col>
+  
+    </Row>
+
+
+
+
+    </Container>
+
+   )
 }

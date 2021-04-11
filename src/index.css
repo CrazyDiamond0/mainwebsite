@@ -14,7 +14,21 @@
     object-fit:cover;
 }
 /********************LOGO***********************/
+.border-image-projects{
+    position: relative;
+    top:7rem;
+    border:1rem solid white;
+    border-radius: 0.2rem;
+}
 
+
+.project-container{
+    position: relative !important;
+    top: 70rem !important;
+    background-color: #343a40;
+    height: 30rem;
+    border-radius: 1rem;
+}
 
 
 .navbar-nav > li > a {

@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from '../resources/mainpicture.jpg'
 import '../index.css'
-
+import {motion}from 'framer-motion'
 
 
 function NavigationBar(){
@@ -10,7 +10,9 @@ function NavigationBar(){
     <nav className="navbar navbar-expand-lg navbar-light bg-dark">
         <div className="container"> 
 
-    <a className="navbar-brand" href="https://www.instagram.com/alex.al.pop/"><img className='logo' src={logo} alt='...logo'/></a>
+    <motion.div
+    animate={{scale:[0,1.2,1]}}
+    ><a className="navbar-brand" href="https://www.instagram.com/alex.al.pop/"><img className='logo' src={logo} alt='...logo'/></a></motion.div>
     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
