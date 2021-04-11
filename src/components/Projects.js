@@ -1,6 +1,5 @@
 import React from 'react'
 import {Card,Row,Col,Container } from 'react-bootstrap'
-import {Button} from 'react-bootstrap'
 import '../index.css'
 import img from '../resources/mainpicture.jpg'
 import { motion } from "framer-motion"
