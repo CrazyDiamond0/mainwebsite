@@ -1,19 +1,8 @@
 import React from "react";
-import { Card, Row, Col, Container, Carousel } from "react-bootstrap";
+import { Card, Container, Carousel } from "react-bootstrap";
 import "../index.css";
 import img from "../resources/mainpicture.jpg";
 import { motion } from "framer-motion";
-
-const card = (
-  <motion.div
-    initial={{ opacity: 0.5 }}
-    whileHover={{ opacity: 1, scale: 1.05 }}
-  >
-    <div className="border-image-projects">
-      <Card.Img variant="top" src={img} />
-    </div>
-  </motion.div>
-);
 
 export default function Projects() {
   return (
