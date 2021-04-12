@@ -1,143 +1,137 @@
 /********************VARIABLES***********************/
-:root{
-    --primary-navigation-text-color:#ffffff;
-    --about-image-size:20rem;
+:root {
+  --primary-navigation-text-color: #ffffff;
+  --about-image-size: 20rem;
 }
 /********************LOGO***********************/
 
-
 /********************LOGO***********************/
-.logo{
-    width:4rem;
-    height:4rem;
-    border-radius: 4rem;
-    border: 0.25rem solid whitesmoke;
-    object-fit:cover;
-    opacity: 1 !important;
+.logo {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 4rem;
+  border: 0.25rem solid whitesmoke;
+  object-fit: cover;
+  opacity: 1 !important;
 }
 /********************LOGO***********************/
-.border-image-projects{
-    
-    position: relative;
-    top:7rem;
-    border:1rem solid white;
-    border-radius: 0.2rem;
-    
+.border-image-projects {
+  position: relative;
+  top: 7rem;
+  border: 1rem solid white;
+  border-radius: 0.2rem;
+}
+.carousel {
+  width: 100%;
+  height: 100%;
+}
+.nav-item:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+}
+.name-logo {
+  color: whitesmoke;
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+}
+.about-image {
+  position: relative;
+  top: 25vh;
+  height: var(--about-image-size);
+  width: var(--about-image-size);
+  border-radius: 100rem;
+  object-fit: cover;
+}
+.background-projects {
+  background-color: #343a40;
 }
 
-.nav-item:hover{
-    background-color: rgba(0, 0, 0, 0.2);
-    transition: 0.5s;
-}
-.name-logo{
-    color:whitesmoke;
-    font-family: 'Roboto', sans-serif;
-    font-size: 30px;
-}
-.about-image{
-    position: relative;
-    top:25vh;
-    height:var(--about-image-size);
-    width:var(--about-image-size);
-    border-radius: 100rem;
-    object-fit:cover;
+.aboutpage {
+  position: relative;
+  background-color: whitesmoke;
+  min-height: 100vh;
 }
 
-
-.aboutpage{
-    position: relative;
-    background-color: whitesmoke;
-    min-height: 100vh;
+.aboutwindow {
+  background-color: whitesmoke;
+}
+.contact-form {
+  position: relative;
+  background-color: gray;
+  min-height: 65vh;
+}
+html {
+  scroll-behavior: smooth;
 }
 
-
-.aboutwindow{ 
-    background-color: whitesmoke;
+.project-container {
+  border: 30px solid #343a40;
+  text-align: center;
+  background-color: #343a40;
+  height: auto !important;
 }
-.contact-form{
-    position:relative;
-    background-color: gray;
-    min-height: 65vh;
-}
-html{
-    scroll-behavior: smooth;
-}
-
-.project-container{
-    text-align:center;
-    position: relative !important;
-    background-color: #343a40;
-    min-height: 100vh;
-}
-.background-navbar{
-    background-color: black;
+.background-navbar {
+  background-color: black;
 }
 
 .navbar-nav > li > a {
-    color:var(--primary-navigation-text-color) !important;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
-
+  color: var(--primary-navigation-text-color) !important;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 
-
-.particlesbackground{
-    
-    position : relative;
-    width:100%;
-    height: 60rem;
-    z-index: 0;
-    background-color: gray;
+.particlesbackground {
+  position: relative;
+  width: 100%;
+  height: 60rem;
+  z-index: 0;
+  background-color: gray;
 }
 
-
-.navbar-toggler{
-    
-    background-color:transparent;
-    border:none !important;
-    border-radius: 30rem !important;
-    width: 3.5rem;
-    height: 3.5rem;
-    opacity: 1;
-    text-align: center;
-    transition: 0.2s;
+.navbar-toggler {
+  background-color: transparent;
+  border: none !important;
+  border-radius: 30rem !important;
+  width: 3.5rem;
+  height: 3.5rem;
+  opacity: 1;
+  text-align: center;
+  transition: 0.2s;
 }
-.navbar-toggler-icon{
-    color:whitesmoke !important;
+.navbar-toggler-icon {
+  color: whitesmoke !important;
 }
 
-
-.navbar-toggler:active{
-    opacity: 1;
-    background-color: gray !important;
-    transition: 0.2s;
-
+.navbar-toggler:active {
+  opacity: 1;
+  background-color: gray !important;
+  transition: 0.2s;
 }
-.navbar{
-    background-color: #343a40 !important;
-    opacity: 0.5;
-    transition: 0.5s;
+.navbar {
+  background-color: #343a40 !important;
+  opacity: 0.5;
+  transition: 0.5s;
 }
-.navbar:hover{
-    opacity: 1;
-    transition: 0.5s;
+.navbar:hover {
+  opacity: 1;
+  transition: 0.5s;
 }
 
-.footer{
-    position: relative;
-    min-height: 15vh !important;
+.footer {
+  position: relative;
+  min-height: 15vh !important;
 }
 
-.title{
-    display: flex;
-    position:absolute;
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: 4rem;
+.title {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 4rem;
 }
