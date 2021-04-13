@@ -1,4 +1,5 @@
 import React from "react";
+import { useState, useEffect } from "react";
 import logo from "../resources/mainpicture.jpg";
 import "../index.css";
 import { motion } from "framer-motion";
@@ -6,8 +7,40 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 export default function NavigationBar() {
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
+  const [visible, setVisible] = useState(true);
+
+  const handleScroll = () => {
+    // find current scroll position
+    const currentScrollPos = window.pageYOffset;
+
+    // set state based on location info (explained in more detail below)
+    if (currentScrollPos > prevScrollPos) {
+      setVisible(false);
+    } else {
+      setVisible(true);
+    }
+
+    // set state to new scroll position
+    setPrevScrollPos(currentScrollPos);
+  };
+
+  const onClick = () => {
+    setVisible(false);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [handleScroll, prevScrollPos, visible]);
+
   return (
-    <nav className="navbar navbar-expand-lg navbar-light  fixed-top">
+    <nav
+      style={{ top: visible ? "0" : "-100px" }}
+      className="navbar navbar-expand-lg navbar-light  fixed-top"
+    >
       <div className="container">
         <motion.div animate={{ scale: [0, 1.2, 1] }}>
           <a className="navbar-brand" href="#top">
@@ -32,23 +65,27 @@ export default function NavigationBar() {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ml-auto">
             <li className="nav-item active">
-              <a className="nav-link" href="#home">
+              <a className="nav-link" onClick={() => onClick()} href="#home">
                 Home <span className="sr-only">(current)</span>
               </a>
             </li>
 
             <li className="nav-item">
-              <a className="nav-link" href="#about">
+              <a className="nav-link" onClick={() => onClick()} href="#about">
                 About
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#projects">
+              <a
+                className="nav-link"
+                onClick={() => onClick()}
+                href="#projects"
+              >
                 Projects
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#contact">
+              <a className="nav-link" onClick={() => onClick()} href="#contact">
                 Contact
               </a>
             </li>
