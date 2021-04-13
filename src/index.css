@@ -1,7 +1,7 @@
 /********************VARIABLES***********************/
 :root {
   --primary-navigation-text-color: #ffffff;
-  --about-image-size: 20rem;
+  --about-image-size: 30rem;
 }
 /********************LOGO***********************/
 
@@ -36,13 +36,82 @@
   font-size: 30px;
 }
 .about-image {
-  position: relative;
-  top: 25vh;
+  border: 10px solid #2a2e33;
   height: var(--about-image-size);
   width: var(--about-image-size);
   border-radius: 100rem;
   object-fit: cover;
 }
+.aboutcolimage {
+  text-align: center;
+}
+.aboutcoltext {
+  text-align: center;
+}
+.abouttext {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+.labelabouttext {
+  background-color: #343a40;
+  color: whitesmoke;
+  border-radius: 15px;
+  border: 10px solid transparent;
+  margin-right: 10px;
+}
+.labelaboutintermidiate {
+  background-color: #2a2e33;
+  border-radius: 20px;
+  width: auto;
+  height: auto;
+  margin-bottom: 10px;
+}
+.labelaboutbasic {
+  border-radius: 20px;
+  width: auto;
+  height: auto;
+  background-color: #2a2e33;
+}
+.labelabouttextskills {
+  border-radius: 20px;
+  border: 20px solid gray;
+  background-color: gray;
+  text-align: center;
+  align-content: center;
+  color: whitesmoke;
+}
+
+.container-grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  height: 100%;
+}
+.aboutcontainer {
+  position: relative;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  height: 400px;
+}
+@media only screen and (max-width: 800px) {
+  .aboutcontainer {
+    top: 5%;
+    -ms-transform: translateY(0%);
+    transform: translateY(0%);
+    max-width: 500px;
+  }
+  .aboutwindow {
+    position: relative;
+    min-height: 170vh !important;
+    background-color: whitesmoke;
+  }
+  .about-image {
+    height: 10rem;
+    width: 10rem;
+  }
+}
+
 .background-projects {
   background-color: #343a40;
 }
@@ -50,12 +119,15 @@
 .aboutpage {
   position: relative;
   background-color: whitesmoke;
-  min-height: 100vh;
+  min-height: inherit;
 }
 
 .aboutwindow {
+  position: relative;
+  height: 100vh;
   background-color: whitesmoke;
 }
+
 .contact-form {
   position: relative;
   background-color: gray;

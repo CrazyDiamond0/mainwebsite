@@ -24,7 +24,9 @@ export default function NavigationBar() {
       // set state to new scroll position
       setPrevScrollPos(currentScrollPos);
     };
-
+    window.addEventListener("click", () => {
+      setVisible(true);
+    });
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
