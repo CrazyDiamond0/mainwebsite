@@ -110,7 +110,7 @@ html {
 }
 .navbar {
   background-color: #2a2e33 !important;
-  transition: 0.7s !important;
+  transition: 0.3s !important;
 }
 
 .navbar-collapse {
