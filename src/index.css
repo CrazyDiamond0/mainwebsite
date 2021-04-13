@@ -27,7 +27,7 @@
   height: 100%;
 }
 .nav-item:hover {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(200, 200, 200, 0.2);
   transition: 0.5s;
 }
 .name-logo {
@@ -110,12 +110,21 @@ html {
 }
 .navbar {
   background-color: #343a40 !important;
-
+  height: 95px;
   transition: 0.5s;
 }
 .navbar:hover {
   opacity: 1;
   transition: 0.5s;
+}
+.navbar-hover-hidden {
+  position: absolute;
+  height: 120px;
+  width: 100%;
+  top: 0px;
+  left: 0;
+  z-index: -1;
+  background-color: #2a2e33;
 }
 
 .footer {
