@@ -20,11 +20,7 @@ export default function NavigationBar() {
       const currentScrollPos = window.pageYOffset;
 
       // set state based on location info (explained in more detail below)
-      if (currentScrollPos > prevScrollPos) {
-        setVisible(false);
-      } else {
-        setVisible(true);
-      }
+      setVisible(false);
 
       // set state to new scroll position
       setPrevScrollPos(currentScrollPos);
@@ -38,7 +34,9 @@ export default function NavigationBar() {
 
   return (
     <nav
-      style={{ top: visible ? "0" : "-100px" }}
+      style={{ top: visible ? "0" : "-80px" }}
+      onMouseEnter={() => setVisible(true)}
+      onMouseLeave={() => setVisible(false)}
       className="navbar navbar-expand-lg navbar-light  fixed-top"
     >
       <div className="container">
@@ -65,7 +63,11 @@ export default function NavigationBar() {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ml-auto">
             <li className="nav-item active">
-              <a className="nav-link" onClick={() => onClick()} href="#home">
+              <a
+                className="nav-link"
+                onClick={() => setVisible(true)}
+                href="#home"
+              >
                 Home <span className="sr-only">(current)</span>
               </a>
             </li>
