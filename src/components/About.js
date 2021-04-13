@@ -18,20 +18,20 @@ export default function About() {
             <label className="abouttext">
               Hi, I'm Alex and I'm a student at the Technical University of
               Cluj-Napoca, specialization in Telecomunications. My interests are
-              primarily in Front-End Developer and Web design. I love to try and
-              learn new programming languages and technologies, build beautiful
-              websites, pushing my skills to the limit and challenge myself
-              every time. In school, I’ve been working in image processing using
-              arithmetic operations (using C#/Emgu CV) and now I’m currently
-              working on my final project using image segmentation with
-              hyper-spectral images My experience: HTML, CSS, Javascript, React,
-              Java, C/C++, C#, Python
+              primarily in Front-End Developer and Web design.
+              <br />I love to try and learn new programming languages and
+              technologies, build beautiful websites, pushing my skills to the
+              limit and challenge myself every time.
+              <br />
+              In school, I’ve been working in image processing using arithmetic
+              operations (using C#/Emgu CV) and now I’m currently working on my
+              final project using image segmentation with hyper-spectral images.
             </label>
 
             <div className="labelabouttextskills">
               Skills
               <div className="labelaboutintermidiate">
-                Intermidiate
+                Intermediate
                 <br />
                 <label className="labelabouttext">HTML</label>
                 <label className="labelabouttext">CSS</label>
