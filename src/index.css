@@ -109,9 +109,8 @@ html {
   transition: 0.2s;
 }
 .navbar {
-  background-color: #343a40 !important;
-  height: 95px;
-  transition: 0.5s;
+  background-color: #2a2e33 !important;
+  transition: 0.7s !important;
 }
 
 .navbar-collapse {
@@ -119,12 +118,11 @@ html {
 }
 
 .navbar:hover {
-  opacity: 1;
   transition: 0.5s;
 }
 .navbar-hover-hidden {
   position: absolute;
-  height: 120px;
+  height: 110px;
   width: 100%;
   top: 0px;
   left: 0;

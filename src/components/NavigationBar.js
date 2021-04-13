@@ -10,17 +10,13 @@ export default function NavigationBar() {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [visible, setVisible] = useState(true);
 
-  const onClick = () => {
-    setVisible(false);
-  };
-
   useEffect(() => {
     const handleScroll = () => {
       // find current scroll position
       const currentScrollPos = window.pageYOffset;
 
       // set state based on location info (explained in more detail below)
-      if (currentScrollPos === 0) {
+      if (currentScrollPos < prevScrollPos) {
         setVisible(true);
       } else {
         setVisible(false);
@@ -44,6 +40,7 @@ export default function NavigationBar() {
           setVisible(false);
         }
       }}
+      onClick={() => setVisible(true)}
       className="navbar navbar-expand-lg navbar-light  fixed-top"
     >
       <div className="container">
