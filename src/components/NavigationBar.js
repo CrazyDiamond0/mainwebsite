@@ -76,21 +76,17 @@ export default function NavigationBar() {
             </li>
 
             <li className="nav-item">
-              <a className="nav-link" onClick={() => onClick()} href="#about">
+              <a className="nav-link" href="#about">
                 About
               </a>
             </li>
             <li className="nav-item">
-              <a
-                className="nav-link"
-                onClick={() => onClick()}
-                href="#projects"
-              >
+              <a className="nav-link" href="#projects">
                 Projects
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" onClick={() => onClick()} href="#contact">
+              <a className="nav-link" href="#contact">
                 Contact
               </a>
             </li>

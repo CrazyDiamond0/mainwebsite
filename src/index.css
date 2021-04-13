@@ -113,6 +113,11 @@ html {
   height: 95px;
   transition: 0.5s;
 }
+
+.navbar-collapse {
+  background-color: #2a2e33;
+}
+
 .navbar:hover {
   opacity: 1;
   transition: 0.5s;
