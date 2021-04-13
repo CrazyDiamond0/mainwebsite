@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
-function NavigationBar() {
+export default function NavigationBar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-light  fixed-top">
       <div className="container">
@@ -63,5 +63,3 @@ function NavigationBar() {
     </nav>
   );
 }
-
-export default NavigationBar;
