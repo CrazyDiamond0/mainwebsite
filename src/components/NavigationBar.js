@@ -20,7 +20,7 @@ export default function NavigationBar() {
       const currentScrollPos = window.pageYOffset;
 
       // set state based on location info (explained in more detail below)
-      if (currentScrollPos == 0) {
+      if (currentScrollPos === 0) {
         setVisible(true);
       } else {
         setVisible(false);
@@ -40,7 +40,7 @@ export default function NavigationBar() {
       style={{ top: visible ? "0" : "-80px" }}
       onMouseEnter={() => setVisible(true)}
       onMouseLeave={() => {
-        if (window.pageYOffset != 0) {
+        if (window.pageYOffset !== 0) {
           setVisible(false);
         }
       }}
