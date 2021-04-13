@@ -10,31 +10,31 @@ export default function NavigationBar() {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [visible, setVisible] = useState(true);
 
-  const handleScroll = () => {
-    // find current scroll position
-    const currentScrollPos = window.pageYOffset;
-
-    // set state based on location info (explained in more detail below)
-    if (currentScrollPos > prevScrollPos) {
-      setVisible(false);
-    } else {
-      setVisible(true);
-    }
-
-    // set state to new scroll position
-    setPrevScrollPos(currentScrollPos);
-  };
-
   const onClick = () => {
     setVisible(false);
   };
 
   useEffect(() => {
+    const handleScroll = () => {
+      // find current scroll position
+      const currentScrollPos = window.pageYOffset;
+
+      // set state based on location info (explained in more detail below)
+      if (currentScrollPos > prevScrollPos) {
+        setVisible(false);
+      } else {
+        setVisible(true);
+      }
+
+      // set state to new scroll position
+      setPrevScrollPos(currentScrollPos);
+    };
+
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [handleScroll, prevScrollPos, visible]);
+  }, [prevScrollPos, visible]);
 
   return (
     <nav
