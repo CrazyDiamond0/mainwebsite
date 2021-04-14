@@ -1,8 +1,32 @@
-import React from "react";
-
+import React, { useState } from "react";
+import emailjs from "emailjs-com";
 import ReactDOM from "react-dom";
 
 export default function Contact({ isopen, onClose }) {
+  const [title, setTitle] = useState("Drop Me a Message");
+
+  function sendEmail(e) {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_tzl8sjf",
+        "template_ofzqeoc",
+        e.target,
+        "user_X3AuMwcASyNSe3shhBdZq"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    setTitle("Message sent");
+    e.target.reset();
+  }
+
   if (!isopen) {
     return <></>;
   }
@@ -13,15 +37,15 @@ export default function Contact({ isopen, onClose }) {
         data-toggle="collapse"
         data-target=".navbar-collapse.show"
       >
-        <div id="contact" className="container contact-container">
-          <form method="post">
-            <h3>Drop Me a Message</h3>
+        <div className="container contact-container">
+          <form onSubmit={sendEmail}>
+            <h3>{title}</h3>
             <div className="row">
               <div className="col-md-6">
                 <div className="form-group">
                   <input
                     type="text"
-                    name="txtName"
+                    name="name"
                     className="form-control"
                     placeholder={"Your Name *"}
                     defaultValue={""}
@@ -29,8 +53,8 @@ export default function Contact({ isopen, onClose }) {
                 </div>
                 <div className="form-group">
                   <input
-                    type="text"
-                    name="txtEmail"
+                    type="email"
+                    name="email"
                     className="form-control"
                     placeholder="Your Email *"
                     defaultValue={""}
@@ -39,7 +63,7 @@ export default function Contact({ isopen, onClose }) {
                 <div className="form-group">
                   <input
                     type="text"
-                    name="txtPhone"
+                    name="phone"
                     className="form-control"
                     placeholder="Your Phone Number *"
                     defaultValue={""}
@@ -49,7 +73,7 @@ export default function Contact({ isopen, onClose }) {
               <div className="col-md-6  textareacontact">
                 <div className="form-group">
                   <textarea
-                    name="txtMsg"
+                    name="message"
                     className="form-control"
                     placeholder="Your Message *"
                     style={{ width: "100%", height: "150px" }}
