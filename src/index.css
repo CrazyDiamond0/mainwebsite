@@ -94,7 +94,7 @@
   transform: translateY(-50%);
   height: 400px;
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
   .aboutcontainer {
     top: 5%;
     -ms-transform: translateY(0%);
@@ -127,11 +127,49 @@
   height: 100vh;
   background-color: whitesmoke;
 }
-
-.contact-form {
+.contact-container {
   position: relative;
   background-color: gray;
-  min-height: 65vh;
+  border-radius: 10px;
+  animation: contact-container-animation 0.3s forwards;
+}
+.btn-contact {
+  border: 10px solid gray;
+  margin-left: 10px;
+}
+
+@keyframes backgroundtranzition {
+  from {
+    background-color: transparent;
+  }
+  to {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+}
+@keyframes contact-container-animation {
+  from {
+    top: calc(30vh - 10px);
+  }
+  to {
+    top: 30vh;
+  }
+}
+.btn-contactme {
+  font-weight: bold !important;
+}
+.contact-form {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100vh;
+  animation-name: backgroundtranzition;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  z-index: 1000;
+  transition: 1s;
 }
 html {
   scroll-behavior: smooth;

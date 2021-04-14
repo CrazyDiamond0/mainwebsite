@@ -8,7 +8,7 @@ import Body from "./components/Body";
 import FacebookMessager from "./components/FaceBookMessager";
 import Projects from "./components/Projects";
 import About from "./components/About";
-import Contract from "./components/Contact";
+import ContactButton from "./components/ContactButton";
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
       <FacebookMessager></FacebookMessager>
       <About></About>
       <Projects id="projects"></Projects>
-      <Contract id="contact"></Contract>
+      <ContactButton></ContactButton>
       <Footer></Footer>
     </div>
   );
