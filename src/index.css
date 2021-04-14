@@ -134,8 +134,8 @@
   animation: contact-container-animation 0.3s forwards;
 }
 .btn-contact {
-  border: 10px solid gray;
   margin-left: 20px;
+  margin-bottom: 10px;
 }
 
 @keyframes backgroundtranzition {

@@ -82,11 +82,11 @@ export default function Contact({ isopen, onClose }) {
                 </div>
               </div>
             </div>
-            <div className="form-group btn-contact">
+            <div className="form-group ">
               <input
                 type="submit"
                 name="btnSubmit"
-                className="btn btn-dark"
+                className="btn btn-dark btn-contact"
                 defaultValue="Send Message"
               />
               <button
