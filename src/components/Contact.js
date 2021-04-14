@@ -76,7 +76,7 @@ export default function Contact({ isopen, onClose }) {
                     name="message"
                     className="form-control"
                     placeholder="Your Message *"
-                    style={{ width: "100%", height: "150px" }}
+                    style={{ width: "100%", height: "150px", resize: "none" }}
                     defaultValue={""}
                   />
                 </div>
