@@ -1,7 +1,9 @@
 import React from "react";
 import { Card, Container, Carousel } from "react-bootstrap";
 import "../index.css";
-import img from "../resources/mainpicture.jpg";
+import mainpage from "../resources/mainpage.png";
+import chatapp from "../resources/chatapp.png";
+import placeholder from "../resources/mainpicture.jpg";
 import { motion } from "framer-motion";
 
 export default function Projects() {
@@ -15,39 +17,29 @@ export default function Projects() {
       >
         <h2 style={{ color: "white", top: "40px" }}>Projects</h2>
         <Carousel className="carousel">
-          <Carousel.Item interval={1000}>
+          <Carousel.Item interval={5000}>
             <motion.div whileHover={{ opacity: 0.5, scale: 1.2 }}>
               <div>
-                <Card.Img variant="top" src={img} />
+                <a href="https://alexpopovici.netlify.app/">
+                  <Card.Img variant="top" src={mainpage} />
+                </a>
               </div>
             </motion.div>
             <Carousel.Caption>
-              <h3>First slide label</h3>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+              <h3>Main Website</h3>
             </Carousel.Caption>
           </Carousel.Item>
-          <Carousel.Item interval={500}>
+          <Carousel.Item interval={5000}>
             <motion.div whileHover={{ opacity: 0.5, scale: 1.2 }}>
               <div>
-                <Card.Img variant="top" src={img} />
+                <a href="https://chattingapp-e6186.web.app/">
+                  <Card.Img variant="top" src={chatapp} />
+                </a>
               </div>
             </motion.div>
             <Carousel.Caption>
-              <h3>Second slide label</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item>
-            <motion.div whileHover={{ opacity: 0.5, scale: 1.2 }}>
-              <div>
-                <Card.Img variant="top" src={img} />
-              </div>
-            </motion.div>
-            <Carousel.Caption>
-              <h3>Third slide label</h3>
-              <p>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-              </p>
+              <h3>Simple Chat App</h3>
+              <p>Simple chat app using Google Firebase</p>
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>
