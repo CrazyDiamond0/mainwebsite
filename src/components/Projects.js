@@ -3,7 +3,6 @@ import { Card, Container, Carousel } from "react-bootstrap";
 import "../index.css";
 import mainpage from "../resources/mainpage.png";
 import chatapp from "../resources/chatapp.png";
-import placeholder from "../resources/mainpicture.jpg";
 import { motion } from "framer-motion";
 
 export default function Projects() {
