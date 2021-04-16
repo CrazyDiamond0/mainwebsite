@@ -36,7 +36,7 @@ export default function Projects() {
             <motion.div whileHover={{ opacity: 0.5, scale: 1.2 }}>
               <div>
                 <a href="https://drive.google.com/file/d/1MUsXjd5Df-VLBEv_siku-cUqLz3MPcNH/view?usp=sharing">
-                  <Card.Img variant="top" src={chatapp} />
+                  <Card.Img variant="top" src={arithmeticapp} />
                 </a>
               </div>
             </motion.div>
@@ -52,8 +52,8 @@ export default function Projects() {
           <Carousel.Item interval={5000}>
             <motion.div whileHover={{ opacity: 0.5, scale: 1.2 }}>
               <div>
-                <a href="https://drive.google.com/file/d/1MUsXjd5Df-VLBEv_siku-cUqLz3MPcNH/view?usp=sharing">
-                  <Card.Img variant="top" src={arithmeticapp} />
+                <a href="https://chattingapp-e6186.web.app/">
+                  <Card.Img variant="top" src={chatapp} />
                 </a>
               </div>
             </motion.div>
