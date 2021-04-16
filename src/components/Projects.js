@@ -15,7 +15,15 @@ export default function Projects() {
         data-toggle="collapse"
         data-target=".navbar-collapse.show"
       >
-        <h2 style={{ color: "white", top: "40px" }}>Projects</h2>
+        <h2
+          style={{
+            color: "white",
+            top: "40px",
+            fontFamily: "Roboto, sans-serif",
+          }}
+        >
+          Projects
+        </h2>
         <Carousel className="carousel">
           <Carousel.Item interval={5000}>
             <motion.div whileHover={{ opacity: 0.5, scale: 1.2 }}>
@@ -26,7 +34,7 @@ export default function Projects() {
               </div>
             </motion.div>
             <Carousel.Caption>
-              <h3>Main Website</h3>
+              <h3 className="robotoclass">Main Website</h3>
             </Carousel.Caption>
           </Carousel.Item>
 
@@ -41,8 +49,8 @@ export default function Projects() {
               </div>
             </motion.div>
             <Carousel.Caption>
-              <h3>Arithmetic Operations App</h3>
-              <p>
+              <h3 className="robotoclass">Arithmetic Operations App</h3>
+              <p className="robotoclass">
                 App that uses arithmetic operations in order to identify the
                 movable objects in a series of frames
               </p>
@@ -58,8 +66,10 @@ export default function Projects() {
               </div>
             </motion.div>
             <Carousel.Caption>
-              <h3>Simple Chat App</h3>
-              <p>Simple chat app using Google Firebase</p>
+              <h3 className="robotoclass">Simple Chat App</h3>
+              <p className="robotoclass">
+                Simple chat app using Google Firebase
+              </p>
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>
