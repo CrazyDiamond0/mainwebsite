@@ -44,7 +44,7 @@ export default function Projects() {
               <h3>Arithmetic Operations App</h3>
               <p>
                 App that uses arithmetic operations in order to identify the
-                movable objects in series of frames
+                movable objects in a series of frames
               </p>
             </Carousel.Caption>
           </Carousel.Item>
