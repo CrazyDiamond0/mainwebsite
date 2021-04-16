@@ -1,6 +1,17 @@
 import React from "react";
 //import { Container, Row, Col } from "react-bootstrap";
 import logo from "../resources/mainpicture.jpg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import "font-mfizz/dist/font-mfizz.css";
+
+import {
+  faReact,
+  faHtml5,
+  faCss3Alt,
+  faJava,
+  faPython,
+  faJs,
+} from "@fortawesome/free-brands-svg-icons";
 
 export default function About() {
   return (
@@ -35,18 +46,40 @@ export default function About() {
                 <div className="labelaboutintermidiate">
                   Intermediate
                   <br />
-                  <label className="labelabouttext">HTML</label>
-                  <label className="labelabouttext">CSS</label>
-                  <label className="labelabouttext">Javascript</label>
-                  <label className="labelabouttext">React</label>
+                  <label className="labelabouttext">
+                    <FontAwesomeIcon icon={faHtml5} />
+                    HTML
+                  </label>
+                  <label className="labelabouttext">
+                    <FontAwesomeIcon icon={faCss3Alt} />
+                    CSS
+                  </label>
+                  <label className="labelabouttext">
+                    <FontAwesomeIcon icon={faJs} />
+                    Javascript
+                  </label>
+                  <label className="labelabouttext">
+                    <FontAwesomeIcon icon={faReact} />
+                    React
+                  </label>
                 </div>
                 <div className="labelaboutbasic">
                   Basic
                   <br />
-                  <label className="labelabouttext">Java</label>
-                  <label className="labelabouttext">C/C++</label>
-                  <label className="labelabouttext">C#</label>
-                  <label className="labelabouttext">Python</label>
+                  <label className="labelabouttext">
+                    <FontAwesomeIcon icon={faJava} />
+                    Java
+                  </label>
+                  <label className="labelabouttext">
+                    <i className="icon-cplusplus"></i> C/C++
+                  </label>
+                  <label className="labelabouttext">
+                    <i class="icon-csharp"></i> C#
+                  </label>
+                  <label className="labelabouttext">
+                    <FontAwesomeIcon icon={faPython} />
+                    Python
+                  </label>
                 </div>
               </div>
             </div>
