@@ -5,6 +5,7 @@ import mainpage from "../resources/mainpage.png";
 import chatapp from "../resources/chatapp.png";
 import arithmeticapp from "../resources/arithmeticapp.png";
 import { motion } from "framer-motion";
+import randomfrenchie from "../resources/randomfrenchie.png";
 
 export default function Projects() {
   return (
@@ -69,6 +70,21 @@ export default function Projects() {
               <h3 className="robotoclass">Simple Chat App</h3>
               <p className="robotoclass">
                 Simple chat app using Google Firebase
+              </p>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item interval={5000}>
+            <motion.div whileHover={{ opacity: 0.5, scale: 1.2 }}>
+              <div>
+                <a href="https://randomfrenchie.netlify.app/">
+                  <Card.Img variant="top" src={randomfrenchie} />
+                </a>
+              </div>
+            </motion.div>
+            <Carousel.Caption>
+              <h3 className="robotoclass">Random Frenchie</h3>
+              <p className="robotoclass">
+                App that uses the dog-api to show a picture of a random frenchie
               </p>
             </Carousel.Caption>
           </Carousel.Item>
