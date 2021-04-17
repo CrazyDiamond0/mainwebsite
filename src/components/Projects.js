@@ -5,7 +5,7 @@ import mainpage from "../resources/mainpage.png";
 import chatapp from "../resources/chatapp.png";
 import arithmeticapp from "../resources/arithmeticapp.png";
 import { motion } from "framer-motion";
-import randomfrenchie from "../resources/randomfrenchie.png";
+import randomfrenchies from "../resources/randomfrenchies.png";
 
 export default function Projects() {
   return (
@@ -77,7 +77,7 @@ export default function Projects() {
             <motion.div whileHover={{ opacity: 0.5, scale: 1.2 }}>
               <div>
                 <a href="https://randomfrenchie.netlify.app/">
-                  <Card.Img variant="top" src={randomfrenchie} />
+                  <Card.Img variant="top" src={randomfrenchies} />
                 </a>
               </div>
             </motion.div>
