@@ -1,7 +1,7 @@
 /********************VARIABLES***********************/
 :root {
   --primary-navigation-text-color: #ffffff;
-  --about-image-size: 29rem;
+  --about-image-size: 27rem;
 }
 /********************LOGO***********************/
 
@@ -44,12 +44,13 @@
   font-size: 30px;
 }
 .about-image {
-  margin-top: 4vh;
-  border: 10px solid #2a2e33;
+  margin-top: 2rem;
+  box-shadow: 0 0 1rem #2a2e33;
   height: var(--about-image-size);
   width: var(--about-image-size);
   border-radius: 100rem;
   object-fit: cover;
+  margin-bottom: 1.3rem;
 }
 .aboutcoltext {
   text-align: center;
