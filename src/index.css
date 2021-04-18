@@ -1,7 +1,7 @@
 /********************VARIABLES***********************/
 :root {
   --primary-navigation-text-color: #ffffff;
-  --about-image-size: 27rem;
+  --about-image-size: 10rem;
 }
 /********************LOGO***********************/
 
@@ -114,6 +114,7 @@
   }
   .aboutwindow {
     height: 100vh;
+    min-height: 65rem;
     position: relative;
     background-color: whitesmoke;
   }
