@@ -74,7 +74,7 @@ export default function About() {
                     <i className="icon-cplusplus"></i> C/C++
                   </label>
                   <label className="labelabouttext">
-                    <i class="icon-csharp"></i> C#
+                    <i className="icon-csharp"></i> C#
                   </label>
                   <label className="labelabouttext">
                     <FontAwesomeIcon icon={faPython} />
