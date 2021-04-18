@@ -16,18 +16,22 @@ export default function Projects() {
         data-toggle="collapse"
         data-target=".navbar-collapse.show"
       >
-        <h2
+        <h3
           style={{
+            borderTop: "1rem solid #343a40",
             color: "white",
             top: "40px",
             fontFamily: "Roboto, sans-serif",
           }}
         >
           Projects
-        </h2>
+        </h3>
         <Carousel className="carousel">
           <Carousel.Item interval={5000}>
-            <motion.div whileHover={{ opacity: 0.5, scale: 1.2 }}>
+            <motion.div
+              initial={{ opacity: 0.4 }}
+              whileHover={{ opacity: 1, scale: 1.2 }}
+            >
               <div>
                 <a href="https://alexpopovici.netlify.app/">
                   <Card.Img variant="top" src={mainpage} />
@@ -42,7 +46,10 @@ export default function Projects() {
           {/*https://drive.google.com/file/d/1MUsXjd5Df-VLBEv_siku-cUqLz3MPcNH/view?usp=sharing*/}
 
           <Carousel.Item interval={5000}>
-            <motion.div whileHover={{ opacity: 0.5, scale: 1.2 }}>
+            <motion.div
+              initial={{ opacity: 0.4 }}
+              whileHover={{ opacity: 1, scale: 1.2 }}
+            >
               <div>
                 <a href="https://drive.google.com/file/d/1MUsXjd5Df-VLBEv_siku-cUqLz3MPcNH/view?usp=sharing">
                   <Card.Img variant="top" src={arithmeticapp} />
@@ -59,7 +66,10 @@ export default function Projects() {
           </Carousel.Item>
 
           <Carousel.Item interval={5000}>
-            <motion.div whileHover={{ opacity: 0.5, scale: 1.2 }}>
+            <motion.div
+              initial={{ opacity: 0.4 }}
+              whileHover={{ opacity: 1, scale: 1.2 }}
+            >
               <div>
                 <a href="https://chattingapp-e6186.web.app/">
                   <Card.Img variant="top" src={chatapp} />
@@ -74,7 +84,10 @@ export default function Projects() {
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item interval={5000}>
-            <motion.div whileHover={{ opacity: 0.5, scale: 1.2 }}>
+            <motion.div
+              initial={{ opacity: 0.4 }}
+              whileHover={{ opacity: 1, scale: 1.2 }}
+            >
               <div>
                 <a href="https://randomfrenchie.netlify.app/">
                   <Card.Img variant="top" src={randomfrenchies} />

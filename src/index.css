@@ -31,6 +31,7 @@
   border-radius: 100px;
 }
 .robotoclass {
+  color: whitesmoke !important;
   font-family: "Roboto", sans-serif;
 }
 
@@ -38,6 +39,7 @@
   background-color: rgba(200, 200, 200, 0.2);
   transition: 0.5s;
 }
+
 .name-logo {
   color: whitesmoke;
   font-family: "Roboto", sans-serif;
@@ -216,7 +218,7 @@ html {
 }
 
 .project-container {
-  border: 30px solid #343a40;
+  border-bottom: 1rem solid #343a40;
   text-align: center;
   background-color: #343a40;
   height: auto !important;
