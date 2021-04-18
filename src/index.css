@@ -30,9 +30,13 @@
   font-family: "Roboto", sans-serif;
   border-radius: 100px;
 }
-.robotoclass {
+.robotoclass,
+.robotoclasstitle {
   color: whitesmoke !important;
   font-family: "Roboto", sans-serif;
+}
+a:hover {
+  text-decoration: none !important;
 }
 
 .nav-item:hover {
@@ -58,6 +62,8 @@
   text-align: center;
 }
 .abouttext {
+  padding-left: 0.4rem;
+  padding-right: 0.4rem;
   max-width: 40rem;
   text-align: left;
   font-family: "Roboto", sans-serif;
@@ -67,7 +73,8 @@
   color: whitesmoke;
   border-radius: 15px;
   border: 10px solid transparent;
-  margin-right: 10px;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
 }
 .labelaboutintermidiate {
   background-color: #2a2e33;
@@ -116,7 +123,7 @@
     max-width: 500px;
   }
   .aboutwindow {
-    height: 100vh;
+    max-height: 100vh;
     min-height: 65rem;
     position: relative;
     background-color: whitesmoke;
@@ -125,6 +132,9 @@
   .about-image {
     height: 10rem;
     width: 10rem;
+  }
+  .robotoclass {
+    display: none;
   }
 }
 @media only screen and (max-height: 900px) {
@@ -146,6 +156,9 @@
   .about-image {
     height: 10rem;
     width: 10rem;
+  }
+  .robotoclass {
+    display: none;
   }
 }
 .aboutskillscontainer {

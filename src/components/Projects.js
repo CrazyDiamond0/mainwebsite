@@ -39,7 +39,9 @@ export default function Projects() {
               </div>
             </motion.div>
             <Carousel.Caption>
-              <h3 className="robotoclass">Main Website</h3>
+              <a href="https://alexpopovici.netlify.app/">
+                <h3 className="robotoclasstitle">Main Website</h3>
+              </a>
             </Carousel.Caption>
           </Carousel.Item>
 
@@ -57,11 +59,13 @@ export default function Projects() {
               </div>
             </motion.div>
             <Carousel.Caption>
-              <h3 className="robotoclass">Arithmetic Operations App</h3>
-              <p className="robotoclass">
-                App that uses arithmetic operations in order to identify the
-                movable objects in a series of frames
-              </p>
+              <a href="https://drive.google.com/file/d/1MUsXjd5Df-VLBEv_siku-cUqLz3MPcNH/view?usp=sharing">
+                <h3 className="robotoclasstitle">Arithmetic Operations App</h3>
+                <p className="robotoclass">
+                  App that uses arithmetic operations in order to identify the
+                  movable objects in a series of frames
+                </p>
+              </a>
             </Carousel.Caption>
           </Carousel.Item>
 
@@ -77,10 +81,12 @@ export default function Projects() {
               </div>
             </motion.div>
             <Carousel.Caption>
-              <h3 className="robotoclass">Simple Chat App</h3>
-              <p className="robotoclass">
-                Simple chat app using Google Firebase
-              </p>
+              <a href="https://chattingapp-e6186.web.app/">
+                <h3 className="robotoclasstitle">Simple Chat App</h3>
+                <p className="robotoclass">
+                  Simple chat app using Google Firebase
+                </p>
+              </a>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item interval={5000}>
@@ -95,10 +101,13 @@ export default function Projects() {
               </div>
             </motion.div>
             <Carousel.Caption>
-              <h3 className="robotoclass">Random Frenchie</h3>
-              <p className="robotoclass">
-                App that uses the dog-api to show a picture of a random frenchie
-              </p>
+              <a href="https://randomfrenchie.netlify.app/">
+                <h3 className="robotoclasstitle">Random Frenchie</h3>
+                <p className="robotoclass">
+                  App that uses the dog-api to show a picture of a random
+                  frenchie
+                </p>
+              </a>
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>
