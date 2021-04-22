@@ -42,7 +42,7 @@ export default function About() {
             </label>
             <div className="aboutskillscontainer">
               <div className="labelabouttextskills">
-                Skills
+                <label className="labelskills">Skills</label>
                 <div className="labelaboutintermidiate">
                   Intermediate
                   <br />
