@@ -1,6 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import logo from "../resources/mainpicture.jpg";
+import logo from "../resources/logo.png";
 import "../index.css";
 import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
