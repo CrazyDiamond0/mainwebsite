@@ -6,6 +6,7 @@ import chatapp from "../resources/chatapp.png";
 import arithmeticapp from "../resources/arithmeticapp.png";
 import { motion } from "framer-motion";
 import randomfrenchies from "../resources/randomfrenchies.png";
+import scrumpoker from "../resources/scrumpoker.png";
 
 export default function Projects() {
   return (
@@ -46,6 +47,28 @@ export default function Projects() {
           </Carousel.Item>
 
           {/*https://drive.google.com/file/d/1MUsXjd5Df-VLBEv_siku-cUqLz3MPcNH/view?usp=sharing*/}
+
+          <Carousel.Item interval={5000}>
+            <motion.div
+              initial={{ opacity: 0.4 }}
+              whileHover={{ opacity: 1, scale: 1.2 }}
+            >
+              <div>
+                <a href="https://scrumpoker-1ef0c.web.app">
+                  <Card.Img variant="top" src={scrumpoker} />
+                </a>
+              </div>
+            </motion.div>
+            <Carousel.Caption>
+              <a href="https://scrumpoker-1ef0c.web.app">
+                <h3 className="robotoclasstitle">Scrum Poker</h3>
+                <p className="robotoclass">
+                  Scrum Poke with fibonacci cards made using realtime database
+                  from google firebase
+                </p>
+              </a>
+            </Carousel.Caption>
+          </Carousel.Item>
 
           <Carousel.Item interval={5000}>
             <motion.div
