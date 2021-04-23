@@ -71,12 +71,6 @@ export default function About() {
                     Java
                   </label>
                   <label className="labelabouttext">
-                    <i className="icon-cplusplus"></i> C/C++
-                  </label>
-                  <label className="labelabouttext">
-                    <i className="icon-csharp"></i> C#
-                  </label>
-                  <label className="labelabouttext">
                     <FontAwesomeIcon icon={faPython} />
                     Python
                   </label>
