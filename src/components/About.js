@@ -28,8 +28,8 @@ export default function About() {
           <div className="aboutcoltext">
             <label className="abouttext">
               Hi, I'm Alex and I'm a student at the Technical University of
-              Cluj-Napoca, specialization in Telecomunications. My interests are
-              primarily in Front-End Developer and Web design.
+              Cluj-Napoca, specialization in Telecommunications. My interests
+              are primarily in Front-End Development and Web design.
               <br />
               <br />I love to try and learn new programming languages and
               technologies, build beautiful websites, pushing my skills to the
